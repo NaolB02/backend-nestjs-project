@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/Home page images/Logo.jpg"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md navbar-light pt-2 pb-1">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./images/Home page images/Logo.jpg"
+              alt="Our Logo"
+              width="100"
+              height="auto"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="./About.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Sign up.html">Sign up</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Login.html">Log in</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- The following content is shown only if the user logged in (in place of the above nav) -->
+      <!-- <div class="ifLoggedin">
+        <p>Username</p>
+        <a href="./Profile.html"
+          ><img
+            src="./images/icons/User icon.svg"
+            alt="profile-picture"
+            width="50"
+            height="auto"
+        /></a>
+      </div> -->
+    </header>
+    <main>
+      <article>
+        <section class="container p-5 my-5 border">
+          <div class="main">
+            <div class="main__note">
+              <h1 class="h1">Lorem Shoe</h1>
+              <p class="lead">
+                Lorem shoe is a place where you can find all type of shoes. Our
+                company was founded at Addis Ababa in 2015. We import high quality
+                shoes from all over the world and sell in all our stores across in
+                the country.
+              </p>
+              <audio controls>
+                <source src="./audios/Audio.mp3" type="audio/mp3" />
+                Your browser does not support audio.
+              </audio>
+            </div>
+            <div>
+              <video
+                controls
+                poster="./images/Thumbnail.jpg"
+                width="600"
+                height="auto"
+              >
+                <source src="./videos/video.mp4" type="video/mp4" />
+                <track
+                  src="./videos/subtitle.vtt"
+                  kind="subtitles"
+                  label="English"
+                  srclang="en"
+                  default
+                />
+                Your browser does not support video.
+              </video>
+            </div>
+          </div>
+          <p id="status" class="lead">
+            We have opened over 10 branches since 2020. Our customers are
+            exponentially raising in all our branches. Specially after we start
+            selling our commodities on the internet, we conducted many
+            shoppings. The following table illustrates the number of shoes we
+            sold every year for the last 5 years. Bear in mind that the table
+            below shows the number of shoes sold in this platform only. Not in
+            our stores.
+          </p>
+        </section>
+        <section class="d-flex justify-content-center align-items-center my-3">
+          <table class="table table-hover w-auto">
+            <thead class="table-success">
+              <tr>
+                <th scope="col">Brand names</th>
+                <th scope="col">2018</th>
+                <th scope="col">2019</th>
+                <th scope="col">2020</th>
+                <th scope="col">2021</th>
+                <th scope="col">2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nike</td>
+                <td>14000</td>
+                <td>15405</td>
+                <td>16543</td>
+                <td>16584</td>
+                <td>18434</td>
+              </tr>
+              <tr class="table-active">
+                <td>Oxford</td>
+                <td>14839</td>
+                <td>15204</td>
+                <td>16540</td>
+                <td>16999</td>
+                <td>18993</td>
+              </tr>
+              <tr>
+                <td>Adidas</td>
+                <td>14394</td>
+                <td>15322</td>
+                <td>16109</td>
+                <td>16983</td>
+                <td>18454</td>
+              </tr>
+              <tr class="table-active">
+                <td>Puma</td>
+                <td>14977</td>
+                <td>15565</td>
+                <td>16345</td>
+                <td>16657</td>
+                <td>18959</td>
+              </tr>
+              <tr>
+                <td>Others</td>
+                <td>27470</td>
+                <td>26665</td>
+                <td>22245</td>
+                <td>23156</td>
+                <td>24158</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <ul class="list-unstyled d-flex gap-5 justify-content-center align-items-center">
+          <li>
+            <a href="https://twitter.com/MereSenior"
+              ><img
+                src="./images/icons/twitter.svg"
+                alt="twitter icon"
+                width="50"
+                height="auto"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mire.ab/"
+              ><img
+                src="./images/icons/instagram.svg"
+                alt="instagram icon"
+                width="50"
+                height="auto"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="text-center">
+        &copy; Copyright Lorem shoe 2022. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

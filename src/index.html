@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/Home page images/Logo.jpg"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md navbar-light pt-2 pb-1">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./images/Home page images/Logo.jpg"
+              alt="Our Logo"
+              width="100"
+              height="auto"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="./About.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Sign up.html">Sign up</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./Login.html">Log in</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- The following content is shown only if the user logged in (in place of the above nav) -->
+      <!-- <div>
+        <p>Username</p>
+        <a href="./Profile.html"
+          ><img
+            src="./icons/User icon.svg"
+            alt="profile-picture"
+            width="50"
+            height="auto"
+        /></a>
+      </div> -->
+    </header>
+    <main>
+      <article class="welcome">
+        <div id="welcome" class="text-white container py-5">
+          <h1 class="h1 pt-5">Lorem Shoe</h1>
+          <p class="pb-5">For every walk of life</p>
+        </div>
+      </article>
+      <article class="container-lg w-80 description">
+        <section class="row my-5   align-items-center justify-content-around">
+          <div class="col-8 col-md-4 desc__information">
+            <h1 class="h1">Get your Dream Shoes</h1>
+            <p>
+              Shoes you definitely want to wear are all here. Here at Lorem
+              Shoe. Buy it and bring power to your steps!
+            </p>
+          </div>
+          <img
+            src="./images/Home page images/Shoe6.jpg"
+            alt="nice shoe"
+            class="col-8 col-md-5"
+            width="150"
+            height="auto"
+          />
+        </section>
+        <section class="row my-5  align-items-center justify-content-around  ">
+          <img
+            src="./images/Home page images/Shoe7.png"
+            alt="nice shoe"
+            width="150"
+            height="auto"
+            class="col-8 col-md-5"
+          />
+          <div class="col-8 col-md-4 desc__information">
+            <h1 class="h1">Designed with perfection</h1>
+            <p>
+              Good design adds value faster than it adds costs. Are you a
+              fashion follower?? You can get well designed shoes for all age
+              stages, for all dress styles.
+            </p>
+          </div>
+        </section>
+        <section class="row my-5  align-items-center justify-content-around">
+          <div class="col-8 col-md-4 desc__information">
+            <h1 class="h1">Run anywhere, comfort everywhere</h1>
+            <p>Lorem shoes take you to comfort world. Comfort for all!!</p>
+          </div>
+          <img
+            src="./images/Home page images/Shoe8.jpg"
+            alt="nice shoe"
+            width="150"
+            height="auto"
+            class="col-8 col-md-5"
+          />
+        </section>
+      </article>
+      <article class=" container ">
+        <div class=" d-flex justify-content-between">
+          <h2 class="h2">Categories</h2>
+          <a href="./Categories.html" class="text-decoration-none">Show all</a>
+        </div>
+        <section class="container">
+          <ul class="categories__list d-flex gap-3 align-items-stretch overflow-auto pb-3">
+            <li class="card align-items-center gap-3 p-3" style="flex: 0 0 30%;">
+              <h3 class="h3">Men</h3>
+              <img
+                src="./images/Home page images/Shoe1.jpg"
+                alt="Men's shoes catagroies"
+                width="150"
+                height="auto"
+                class="card-img w-100"
+
+              />
+              <a href="./Categories.html#men" class="shopnow text-decoration-none">Shop now</a>
+            </li>
+            <li class="card align-items-center gap-3 p-3"  style="flex: 0 0 30%;">
+              <h3 class="h3 card-title" >Women</h3>
+              <img
+                src="./images/Home page images/Shoe2.jpg"
+                alt="Women's shoes catagroies"
+                width="150"
+                height="auto"
+                class="card-img w-100"
+              />
+              <a href="./Categories.html#women" class="shopnow text-decoration-none">Shop now</a>
+            </li>
+            <li class="card align-items-center gap-3 p-3"  style="flex: 0 0 30%;">
+              <h3 class="h3">Children</h3>
+              <img
+                src="./images/Home page images/Shoe3.jpg"
+                alt="Children's shoes catagroies"
+                width="150"
+                height="auto"
+                class="card-img w-100"
+
+              />
+              <a href="./Categories.html#children" class="shopnow text-decoration-none">Shop now</a>
+            </li>
+            <li class="card align-items-center gap-3 p-3"  style="flex: 0 0 30%;">
+              <h3 class="h3">Sport</h3>
+              <img
+                src="./images/Home page images/Shoe4.jpg"
+                alt="Sport shoes catagroies"
+                width="150"
+                height="auto"
+                class="card-img w-100"
+
+              />
+              <a href="./Categories.html#sport" class="shopnow text-decoration-none">Shop now</a>
+            </li>
+            <li class="card align-items-center gap-3 p-3"  style="flex: 0 0 30%;">
+              <h3 class="h3">Fashion</h3>
+              <img
+                src="./images/Home page images/Shoe5.jpg"
+                alt="Fashion shoes catagroies"
+                width="150"
+                height="auto"
+                class="card-img w-100"
+
+              />
+              <a href="./Categories.html#fashion" class="shopnow text-decoration-none">Shop now</a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article>
+        <div class="text-center py-3  ">
+          <h2 class="h2 text-center">What is new?</h2>
+          <p class="text-center" >Receive updates about new products and promotions</p>
+          <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+            Enter Email Here
+          </button>
+        </div>
+        <!-- Email entering form here (this content is shown only if the user clicked the above button) -->
+        <div id="simpleModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="h2 modal-title">We would like to be in-touch with you</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container mt-3">
+                  <form action="/action_page.php">
+                    <div class="inputs">
+                      <input
+                        type="text"
+                        name="name"
+                        class="field"
+                        placeholder="Your name"
+                        required
+                      />
+                      <input
+                        type="text"
+                        name="phoneNumber"
+                        class="field"
+                        placeholder="Your phone"
+                        required
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        class="field"
+                        placeholder="Your email"
+                        required
+                      />
+                      <input
+                        type="submit"
+                        name="submit"
+                        class="btn"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="h2">About</h2>
+            <nav>
+              <ul class="nav flex-column">
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./About.html#status">Status</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <h2 class="h2">My account</h2>
+            <nav>
+              <ul class="nav flex-column">
+                <li><a href="./Sign up.html">Sign up</a></li>
+                <li>
+                  <a href="./Profile.html#liked-shoes">Liked&nbsp;Shoes</a>
+                </li>
+                <li>
+                  <a href="./Profile.html#bought-shoes"
+                    >Shopping&nbsp;History</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <ul class="list-unstyled d-flex gap-5 justify-content-center align-items-center">
+          <li>
+            <a href="https://twitter.com/MereSenior"
+              ><img
+                src="./images/icons/twitter.svg"
+                alt="twitter icon"
+                width="50"
+                height="auto"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mire.ab/"
+              ><img
+                src="./images/icons/instagram.svg"
+                alt="instagram icon"
+                width="50"
+                height="auto"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="text-center">
+        &copy; Copyright Lorem shoe 2022. All rights reserved.
+      </p>
+    </footer>
+    <!-- <script src="./JS/modal.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

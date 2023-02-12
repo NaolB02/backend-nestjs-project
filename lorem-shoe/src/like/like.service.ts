@@ -48,4 +48,31 @@ export class LikeService {
         return products
         
     }
+
+    async createNewLike(user: User, productid: number){
+        const userid = user.id;
+        
+        let userLike: UserLikes;
+
+        userLike.productid = productid;
+        userLike.userid = userid;
+
+        this.userLikesRepo.create(userLike);
+        
+    }
+
+    async deleteLike(user: User, productid: number){
+        const userid = user.id;
+
+        const findOneOptions: FindOneOptions<UserLikes> = {
+            where: {
+                userid,
+                productid,
+            }
+        }
+
+        const userLike = await this.userLikesRepo.findOne(findOneOptions);
+        await this.userLikesRepo.delete(userLike.id);
+        
+    }
 }

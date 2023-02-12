@@ -22,8 +22,14 @@ let LikeController = class LikeController {
     constructor(likeService) {
         this.likeService = likeService;
     }
-    findLikedProducts(user) {
-        return this.likeService.findLikedProduct(user);
+    async findLikedProducts(user) {
+        return await this.likeService.findLikedProduct(user);
+    }
+    async createNewLike(user, productid) {
+        await this.likeService.createNewLike(user, productid);
+    }
+    async deleteLike(user, productid) {
+        await this.likeService.deleteLike(user, productid);
     }
 };
 __decorate([
@@ -31,8 +37,24 @@ __decorate([
     __param(0, (0, extractUser_decorator_1.ExtractUser)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [user_entity_1.User]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], LikeController.prototype, "findLikedProducts", null);
+__decorate([
+    (0, common_1.Post)(),
+    __param(0, (0, extractUser_decorator_1.ExtractUser)()),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_entity_1.User, Number]),
+    __metadata("design:returntype", Promise)
+], LikeController.prototype, "createNewLike", null);
+__decorate([
+    (0, common_1.Delete)(),
+    __param(0, (0, extractUser_decorator_1.ExtractUser)()),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_entity_1.User, Number]),
+    __metadata("design:returntype", Promise)
+], LikeController.prototype, "deleteLike", null);
 LikeController = __decorate([
     (0, common_1.Controller)('like'),
     (0, common_1.UseGuards)((0, passport_1.AuthGuard)()),

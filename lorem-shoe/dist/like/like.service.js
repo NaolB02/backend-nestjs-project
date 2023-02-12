@@ -47,6 +47,24 @@ let LikeService = class LikeService {
         }
         return products;
     }
+    async createNewLike(user, productid) {
+        const userid = user.id;
+        let userLike;
+        userLike.productid = productid;
+        userLike.userid = userid;
+        this.userLikesRepo.create(userLike);
+    }
+    async deleteLike(user, productid) {
+        const userid = user.id;
+        const findOneOptions = {
+            where: {
+                userid,
+                productid,
+            }
+        };
+        const userLike = await this.userLikesRepo.findOne(findOneOptions);
+        await this.userLikesRepo.delete(userLike.id);
+    }
 };
 LikeService = __decorate([
     (0, common_1.Injectable)(),

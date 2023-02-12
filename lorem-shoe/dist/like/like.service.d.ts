@@ -7,4 +7,6 @@ export declare class LikeService {
     private productRepo;
     constructor(userLikesRepo: Repository<UserLikes>, productRepo: Repository<Product>);
     findLikedProduct(user: User): Promise<Product[]>;
+    createNewLike(user: User, productid: number): Promise<void>;
+    deleteLike(user: User, productid: number): Promise<void>;
 }

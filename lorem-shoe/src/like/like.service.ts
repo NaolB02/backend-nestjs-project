@@ -76,7 +76,6 @@ export class LikeService {
         }
 
         const userLike = await this.userLikesRepo.findOne(findOneOptions);
-        console.log(userLike)
         await this.userLikesRepo.delete(userLike.id);
         
     }

@@ -9,7 +9,6 @@ export class AuthController {
 
     @Post('signup')
     createUser(@Body(ValidationPipe) createUserDto: CreateUserDto){
-        console.log("asdfa");
         return this.authService.createUser(createUserDto);
     }
 

@@ -15,7 +15,6 @@ export class BuyController {
         return await this.buyService.findBoughtProduct(user);
     }
 
-
     @Post()
     async firstBuy(@ExtractUser() user: User, @Body() body){
         await this.buyService.firstBuy(user, body.productid);

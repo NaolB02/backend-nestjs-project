@@ -22,7 +22,6 @@ let AuthController = class AuthController {
         this.authService = authService;
     }
     createUser(createUserDto) {
-        console.log("asdfa");
         return this.authService.createUser(createUserDto);
     }
     checkUser(checkUserDto) {

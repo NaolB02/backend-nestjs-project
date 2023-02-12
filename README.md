@@ -14,6 +14,7 @@ Group Members           ID
 The backend file(REST API) is stored in the lorem-shoe folder.
 The BootstrapRedesigned folder contains the newly redesigned website with bootstrap.
 The fetch Api folder contains javascript files that consume the REST API.
+The src file contains the original website before redesigning.
 
 The two features that the REST API is made for are the like feature and the buy feature.
 

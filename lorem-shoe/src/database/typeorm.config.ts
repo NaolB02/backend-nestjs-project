@@ -8,7 +8,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   port: 3306,
   username: 'root',
   password: '',
-  database: 'Lorem_Shoe',
+  database: 'lorem_shoe',
   entities: [User, Product],
   synchronize: true,
 };

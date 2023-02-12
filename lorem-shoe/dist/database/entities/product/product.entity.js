@@ -23,8 +23,16 @@ __decorate([
 ], Product.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    __metadata("design:type", Object)
-], Product.prototype, "details", void 0);
+    __metadata("design:type", String)
+], Product.prototype, "desc", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Product.prototype, "shoeSize", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Product.prototype, "placeMade", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)

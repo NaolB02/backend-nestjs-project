@@ -9,7 +9,7 @@ exports.typeOrmConfig = {
     port: 3306,
     username: 'root',
     password: '',
-    database: 'Lorem_Shoe',
+    database: 'lorem_shoe',
     entities: [user_entity_1.User, product_entity_1.Product],
     synchronize: true,
 };

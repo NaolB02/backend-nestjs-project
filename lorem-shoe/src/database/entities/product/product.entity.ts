@@ -10,7 +10,13 @@ export class Product{
     name: string;
   
     @Column()
-    details: object;
+    desc: string;
+
+    @Column()
+    shoeSize: string;
+
+    @Column()
+    placeMade: string;
 
     @Column()
     price: number;

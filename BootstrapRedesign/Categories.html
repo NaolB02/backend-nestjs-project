@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css" />
     <link rel="stylesheet" href="assets/css/Footer-Dark.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -96,50 +97,40 @@
               >
                 <li
                   style="flex: 0 0 30%"
-                  class="p-3 mb-3 border rounded-3 border-dark">
+                  class="p-3 mb-3 border rounded-3 border-dark"
+                >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Men/Shoe1.jpg"
                         alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
+                        width="90%"
+                        class="w-50 ratio ratio-1x1"
                         height="170px"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Black Oxford High class shoes</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                            <li>Leather Made</li>
-                            <li>us:9, eu:42</li>
-                            <li>Made in France</li>
-                            <li>11000 birr</li>
-                          </ul>
-                          
-                        </p>
-                       
+                      <div class="w-50">
+                        <h3 class="fs-4">Black Oxford High class shoes</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Leather Made</li>
+                          <li>us:9, eu:42</li>
+                          <li>Made in France</li>
+                        </ul>
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p class="">11000 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button aria-label="Like this" class="btn btn-dark test1" >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
+                          class="test2"
                           width="20"
                           height="auto"
                         />
                       </button>
                     </div>
-                      
-                    </div>
-                    <div class="d-flex gap-2 justify-content-between">
-                      
-                      
-                    </div>
-                    
                   </div>
                 </li>
                 <li
@@ -147,31 +138,28 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Men/Shoe2.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
+                        alt="Classic Men"
+                        width="90%"
+                        class="w-50 ratio ratio-1x1"
                         height="170px"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Vipkoala 2022 spring suede</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>fits with many dresses</li>
-                           <li>us:8, eu:41</li>
-                           <li>Made in France</li>
-                           <li>9500 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Classic Men</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>fits with many dresses</li>
+                          <li>us:8, eu:41</li>
+                          <li>Made in France</li>
                         </ul>
-
-                        </p>
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                       <button class="btn btn-dark">Buy now</button>
-                       <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p class="">9500 birr</p>
+                      <button data-id="2" class="btn btn-dark buy-btn">Buy now</button>
+                      <button aria-label="Like this" class="btn btn-dark">
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -179,8 +167,7 @@
                           height="auto"
                         />
                       </button>
-                      </div>
-                   
+                    </div>
                   </div>
                 </li>
                 <li
@@ -188,78 +175,75 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Men/Shoe3.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Vipkoala 2022 spring suede"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Vipkoala 2022 spring suede</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Leather Made</li>
-                           <li>us:8, eu:40</li>
-                           <li>Made in France</li>
-                           <li>9700 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Vipkoala 2022 spring suede</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Leather Made</li>
+                          <li>us:8, eu:40</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9700 birr</p>
+                      <button data-id="3" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="test1"
+                        
 
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
+                          class="test2"
+                          id="test"
                           width="20"
                           height="auto"
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-                <li
+                <!-- <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                     <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Men/Shoe4.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="The Onslow Blucher"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">The Onslow Blucher</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>In white buck</li>
-                           <li>us:9, eu:41</li>
-                           <li>Made in France</li>
-                           <li>9300 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">The Onslow Blucher</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>in white buck</li>
+                          <li>us:9, eu:41</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9300 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -268,9 +252,8 @@
                         />
                       </button>
                     </div>
-                   
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </section>
@@ -285,34 +268,30 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Women/Shoe1.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="High heels Women fashion"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">High heels Women fashion</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>High heels</li>
-                           <li>us:8, eu:38</li>
-                           <li>Made in France</li>
-                           <li>9700 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">High heels Women fashion</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us:8, eu:38</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9700 birr</p>
+                      <button data-id="4" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -321,7 +300,6 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
                 <li
@@ -329,34 +307,33 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                     <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                       src="./images/Categories page images/Women/Shoe2.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Women/Shoe2.jpg"
+                        alt="Joskaa Women classic beige square heel shoes"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Joskaa Women classic beige square heel shoes</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Easy to wear</li>
-                           <li>us:6, eu:38</li>
-                           <li>Made in USA</li>
-                           <li>9000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">
+                          Joskaa Women classic beige square heel shoes
+                        </h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Easy to wear</li>
+                          <li>us:6, eu:38</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9000 birr</p>
+                      <button data-id="5" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -365,7 +342,6 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
                 <li
@@ -373,34 +349,33 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Women/Shoe3.png"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Gucci air Jordan 13 couture Sneaker"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Gucci air Jordan 13 couture Sneaker</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Brand new</li>
-                           <li>us:6, eu:35</li>
-                           <li>Made in USA</li>
-                           <li>8500 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">
+                          Gucci air Jordan 13 couture Sneaker
+                        </h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Brand new</li>
+                          <li>us:6, eu:35</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>8500 birr</p>
+                      <button data-id="6" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -409,7 +384,46 @@
                         />
                       </button>
                     </div>
-                   
+                  </div>
+                </li>
+                <!-- <li
+                  style="flex: 0 0 30%"
+                  class="p-3 mb-3 border rounded-3 border-dark"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-2 justify-content-between">
+                      <img
+                        src="./images/Categories page images/Women/Shoe4.jpg"
+                        alt="New Shoe"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
+                        style="aspect-ratio: 1/1"
+                      />
+                      <div class="w-50">
+                        <h3 class="fs-4">New Shoe</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us:6, eu:35</li>
+                          <li>Leather made</li>
+                          <li>Made in France</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>8000 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
+                        <img
+                          src="./images/icons/heart.svg"
+                          alt="like icon"
+                          width="20"
+                          height="auto"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </li>
                 <li
@@ -417,34 +431,31 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                     <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                         src="./images/Categories page images/Women/Shoe4.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Women/Shoe5.jpg"
+                        alt="Vipkoala Women sneakers"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">New Shoe</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Leather made</li>
-                           <li>us:6, eu:35</li>
-                           <li>Made in France</li>
-                           <li>8000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Vipkoala Women sneakers</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Comfortable</li>
+                          <li>us:7, eu:38</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>7500 Birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -453,53 +464,8 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
-                </li>
-                <li
-                  style="flex: 0 0 30%"
-                  class="p-3 mb-3 border rounded-3 border-dark"
-                >
-                  <div class="d-flex flex-column gap-3">
-                     <div class="card">
-                      <img
-                         src="./images/Categories page images/Women/Shoe5.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
-                        style="aspect-ratio: 1/1"
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Vipkoala Women sneakers</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Comfortable</li>
-                           <li>us:7, eu:38</li>
-                           <li>Made in France</li>
-                           <li>7500 birr</li>
-                        </ul>
-
-                          
-                        </p>
-                       
-                      </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
-                        <img
-                          src="./images/icons/heart.svg"
-                          alt="like icon"
-                          width="20"
-                          height="auto"
-                        />
-                      </button>
-                    </div>
-                    
-                  </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </section>
@@ -509,39 +475,36 @@
               <ul
                 class="container d-flex align-items-stretch gap-5 overflow-auto list-unstyled"
               >
-               <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                         src="./images/Categories page images/Children/Shoe1.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Children/Shoe1.jpg"
+                        alt="L'Amour Girls T-strap"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">L'Amour Girls T-strap</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>leather made</li>
-                           <li>us: 4, eu: 8</li>
-                           <li>Made in France</li>
-                           <li>5000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">L'Amour Girls T-strap</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>leather made</li>
+                          <li>us: 4, eu: 8</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>5000 birr</p>
+                      <button data-id="7" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -550,43 +513,38 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-               
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                         src="./images/Categories page images/Children/Shoe2.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Children/Shoe2.jpg"
+                        alt="Mia belle kids loafers"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Mia belle kids loafers</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Girls</li>
-                           <li>us: 4, eu: 10</li>
-                           <li>Made in France</li>
-                           <li>4800 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Mia belle kids loafers</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Girls</li>
+                          <li>us: 4, eu: 10</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>4800 birr</p>
+                      <button data-id="8" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -595,43 +553,37 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-             
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                          src="./images/Categories page images/Children/Shoe3.png"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Children/Shoe3.png"
+                        alt="Fleece rainbow velcro strap"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Fleece rainbow velcro strap</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>comfortable</li>  
-                           <li>us: 4, eu:13</li>
-                           <li>Made in France</li>
-                           <li>4300 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Fleece rainbow velcro strap</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us: 4, eu:13</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>4300 birr</p>
+                      <button data-id="9" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -640,43 +592,37 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-             
-                   <li
+                <!-- <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                         src="./images/Categories page images/Children/Shoe4.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Children/Shoe4.jpg"
+                        alt="Win See Kai"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Win See Kai</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Toddlers</li>
-                           <li>us: 4, eu:11</li>
-                           <li>Made in USA</li>
-                           <li>4000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Win See Kai</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us: 4, eu: 11</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>4000 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -685,43 +631,38 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-              
-                   <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Children/Shoe5.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Liso Branco"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Liso Branco</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Girls</li>
-                           <li>us: 3, eu: 10</li>
-                           <li>Made in France</li>
-                           <li>4500 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Liso Branco</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Girls</li>
+                          <li>us: 3, eu: 10</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>4500 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -730,10 +671,8 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
-                </li>
-              
+                </li> -->
               </ul>
             </div>
           </section>
@@ -748,34 +687,31 @@
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Sport/Shoe1.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Adidas X Gosted_1 FG"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Adidas X Gosted_1 FG</h6>
-                        <p class="card-text">
+                      <div class="w-50">
+                        <h3 class="fs-4">Adidas X Gosted_1 FG</h3>
                         <ul class="list-unstyled fs-6">
                           <li>Well designed</li>
                           <li>us:9, eu:43</li>
                           <li>Made in USA</li>
-                          <li>9500 birr</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9500 birr</p>
+                      <button data-id="10" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -784,43 +720,38 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-              
-                 <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Sport/Shoe2.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Nike Kobe 9 Ekite Stocking"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Nike Kobe 9 Ekite Stocking</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Basket Ball</li>
-                           <li>us: 9, eu:43</li>
-                           <li>Made in USA</li>
-                           <li>10000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Nike Kobe 9 Ekite Stocking</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Basket Ball</li>
+                          <li>us: 9, eu:43</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>10000 birr</p>
+                      <button data-id="11" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -829,43 +760,38 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-              
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                         src="./images/Categories page images/Sport/Shoe3.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Sport/Shoe3.jpg"
+                        alt="Men's Puma viz runner shoes"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Men's Puma viz runner shoes</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Running Shoes</li>
-                           <li>us:8, eu:40</li>
-                           <li>Made in Vietnam</li>
-                           <li>8700 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Men's Puma viz runner shoes</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Running Shoes</li>
+                          <li>us:8, eu:40</li>
+                          <li>Made in Vietnam</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>8700 birr</p>
+                      <button data-id="12" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -874,43 +800,38 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-
-                  <li
+                <!-- <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Sport/Shoe4.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Nike Self-lacing Sneaker"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Nike Self-lacing Sneaker</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Brand new</li>
-                           <li>us: 7, eu: 42</li>
-                           <li>Made in USA</li>
-                           <li>9500 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Nike Self-lacing Sneaker</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Brand new</li>
+                          <li>us: 7, eu: 42</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9500 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -919,43 +840,37 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-              
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
                         src="./images/Categories page images/Sport/Shoe5.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        alt="Adidas NMD"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Adidas NMD</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Brand new</li>
-                           <li>us: 6, eu: 40</li>
-                           <li>Made in Japan</li>
-                           <li>8000 birr</li>
+                      <div class="w-50">
+                        <h3 class="fs-4">Adidas NMD</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us: 6, eu: 40</li>
+                          <li>Made in Japan</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>8000 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -964,10 +879,8 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
-                </li>
-               
+                </li> -->
               </ul>
             </div>
           </section>
@@ -977,85 +890,36 @@
               <ul
                 class="container d-flex align-items-stretch gap-5 overflow-auto list-unstyled"
               >
-              <li
-                  style="flex: 0 0 30%"
-                  class="p-3 mb-3 border rounded-3 border-dark"
-                >
-                  <div class="d-flex flex-column gap-3">
-                    <div class="card">
-                      <img
-                           src="./images/Categories page images/Fashion/Shoe1.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
-                        style="aspect-ratio: 1/1"
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Louis Vuition brown air jordan 11</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Male</li>
-                           <li>eu: 40, us: 8</li>
-                           <li>Made in USA</li>
-                           <li>9300 birr</li>
-                        </ul>
-
-                          
-                        </p>
-                       
-                      </div>
-
-                      <div class="d-flex fle justify-content-around">
-                     
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
-                        <img
-                          src="./images/icons/heart.svg"
-                          alt="like icon"
-                          width="20"
-                          height="auto"
-                        />
-                      </button>
-                    </div>
-                    
-                  </div>
-                </li>
-               
                 <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                          src="./images/Categories page images/Fashion/Shoe2.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Fashion/Shoe1.jpg"
+                        alt="Louis Vuition brown air jordan 11"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Adidas AR 2_0 Chicago</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Male</li>
-                           <li>us: 9, eu: 43</li>
-                           <li>Made in USA</li>
-                           <li>9000 birr</li>
-                          
+                      <div class="w-50">
+                        <h3 class="fs-4">Louis Vuition brown air jordan 11</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>eu: 40, us: 8</li>
+                          <li>Male</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9300 birr</p>
+                      <button data-id="13" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -1064,45 +928,37 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-                
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                           src="./images/Categories page images/Fashion/Shoe3.webp"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Fashion/Shoe2.jpg"
+                        alt="Adidas AR 2_0 Chicago"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Louis Vuition</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>Male</li>
-                           <li>us:8, eu:40</li>
-                           <li>Made in France</li> 
-                           <li>9700 birr</li>                      
-                        
-                          
+                      <div class="w-50">
+                        <h3 class="fs-4">Adidas AR 2_0 Chicago</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us: 9, eu: 43</li>
+                          <li>Made in USA</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9000 birr</p>
+                      <button data-id="14" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -1111,45 +967,37 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-
-                  
-                  <li
+                <li
                   style="flex: 0 0 30%"
                   class="p-3 mb-3 border rounded-3 border-dark"
                 >
                   <div class="d-flex flex-column gap-3">
-                    <div class="card">
+                    <div class="d-flex gap-2 justify-content-between">
                       <img
-                          src="./images/Categories page images/Fashion/Shoe5.jpg"
-                        alt="Black Oxford High class shoes"
-                        width="100%"
-                        class="w-100 ratio ratio-1x1"
-                        height="170px"
+                        src="./images/Categories page images/Fashion/Shoe3.webp"
+                        alt="Louis Vuition"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
                         style="aspect-ratio: 1/1"
                       />
-                      <div class="card-body">
-                        <h6 class="card-title">Converse Chuck Taylor All Star</h6>
-                        <p class="card-text">
-                          <ul class="list-unstyled fs-6">
-                           <li>High classic shoes</li>
-                           <li>us:9, eu:42</li>
-                           <li>Made in Vietnam</li>
-                           <li>8500 birr</li>
-                          
+                      <div class="w-50">
+                        <h3 class="fs-4">Louis Vuition</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>us:8, eu:40</li>
+                          <li>Made in France</li>
                         </ul>
-
-                          
-                        </p>
-                       
                       </div>
-
-                      <div class="d-flex fle justify-content-around">
-                      
-                      <button class="btn btn-dark">Buy now</button>
-                      <button aria-label="Like this" class="btn btn-ou">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9700 birr</p>
+                      <button data-id="15" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
                         <img
                           src="./images/icons/heart.svg"
                           alt="like icon"
@@ -1158,11 +1006,88 @@
                         />
                       </button>
                     </div>
-                    
                   </div>
                 </li>
-               
-              
+                <!-- <li
+                  style="flex: 0 0 30%"
+                  class="p-3 mb-3 border rounded-3 border-dark"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-2 justify-content-between">
+                      <img
+                        src="./images/Categories page images/Fashion/Shoe4.jpg"
+                        alt="Mens casual high top boots"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
+                        style="aspect-ratio: 1/1"
+                      />
+                      <div class="w-50">
+                        <h3 class="fs-4">Mens casual high boots</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>Leather made</li>
+                          <li>us: 8, eu: 40</li>
+                          <li>Made in USA</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>9500 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
+                        <img
+                          src="./images/icons/heart.svg"
+                          alt="like icon"
+                          width="20"
+                          height="auto"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  style="flex: 0 0 30%"
+                  class="p-3 mb-3 border rounded-3 border-dark"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-2 justify-content-between">
+                      <img
+                        src="./images/Categories page images/Fashion/Shoe5.jpg"
+                        alt="Converse Chuck Taylor All Star"
+                        width="90%"
+                        class="w-50"
+                        height="auto"
+                        style="aspect-ratio: 1/1"
+                      />
+                      <div class="w-50">
+                        <h3 class="fs-4">Converse Chuck Taylor All Star</h3>
+                        <ul class="list-unstyled fs-6">
+                          <li>High classic shoes</li>
+                          <li>us:9, eu:42</li>
+                          <li>Made in Vietnam</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>8500 birr</p>
+                      <button data-id="1" class="btn btn-dark buy-btn">Buy now</button>
+                      <button
+                        aria-label="Like this"
+                        class="main__container__likebtn"
+                      >
+                        <img
+                          src="./images/icons/heart.svg"
+                          alt="like icon"
+                          width="20"
+                          height="auto"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li> -->
               </ul>
             </div>
           </section>
@@ -1183,5 +1108,6 @@
       </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

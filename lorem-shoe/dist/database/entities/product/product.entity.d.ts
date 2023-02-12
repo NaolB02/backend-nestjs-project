@@ -1,7 +1,7 @@
 export declare class Product {
     id: number;
     name: string;
-    desc: string;
+    descr: string;
     shoeSize: string;
     placeMade: string;
     price: number;

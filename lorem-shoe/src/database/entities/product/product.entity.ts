@@ -10,7 +10,7 @@ export class Product{
     name: string;
   
     @Column()
-    desc: string;
+    descr: string;
 
     @Column()
     shoeSize: string;

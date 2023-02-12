@@ -2,7 +2,7 @@ import { ConflictException, Injectable, InternalServerErrorException, Unauthoriz
 import { InjectRepository } from '@nestjs/typeorm';
 import { CreateUserDto } from 'src/dto/createUser.dto';
 import { FindOneOptions, Repository } from 'typeorm';
-import { User } from 'src/user/user.entity';
+import { User } from 'src/database/entities/user/user.entity';
 import * as bcrypt from 'bcrypt';
 import { CheckUserDto } from 'src/dto/checkUser.dto';
 import { JwtPayload } from 'src/jwt-files/jwtPayload.interface';

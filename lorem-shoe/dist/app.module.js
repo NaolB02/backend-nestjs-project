@@ -13,13 +13,17 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const auth_module_1 = require("./auth/auth.module");
 const typeorm_config_1 = require("./database/typeorm.config");
+const like_module_1 = require("./like/like.module");
+const buy_module_1 = require("./buy/buy.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             typeorm_1.TypeOrmModule.forRoot(typeorm_config_1.typeOrmConfig),
-            auth_module_1.AuthModule
+            auth_module_1.AuthModule,
+            like_module_1.LikeModule,
+            buy_module_1.BuyModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

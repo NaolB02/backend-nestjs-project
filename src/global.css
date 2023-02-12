@@ -1,0 +1,51 @@
+header {
+    background-color: #aa96da;  
+}
+
+.welcome {
+    background-image: url("./images/Thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7em 2em;
+}
+
+.categories {
+    background-color: lightgray;
+}
+.categories__list li {
+    
+    background-color: mintcream;
+}
+
+/* forms */
+
+.field {
+    background-color: rgba(230, 230, 230, 0.6);
+}
+  
+.field:hover {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+background-color: #fff;
+border: 2px solid #aa96da;
+}
+
+.btn {
+background-color: #52e94a;
+color: #fff;
+}
+
+.btn:hover {
+background-color: #27ae60;
+}
+
+
+
+footer{
+    background: linear-gradient(to right, #52e94a, #aa96da);
+    color: #fff;
+}
+

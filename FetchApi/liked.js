@@ -30,8 +30,6 @@ function handleLikes(id) {
 async function sendLikeRequest(btn) {
     let id = btn.dataset.id;
 
-    console.log('likee')
-
     const sendReq = { productid: id };
     console.log(sendReq)
     try {

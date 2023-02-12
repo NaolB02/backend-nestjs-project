@@ -7,12 +7,13 @@ import { AuthService } from './auth.service';
 export class AuthController {
     constructor(private authService: AuthService){}
 
-    @Post('/signup')
+    @Post('signup')
     createUser(@Body(ValidationPipe) createUserDto: CreateUserDto){
+        console.log("asdfa");
         return this.authService.createUser(createUserDto);
     }
 
-    @Post('/login')
+    @Post('login')
     checkUser(@Body(ValidationPipe) checkUserDto:CheckUserDto){
         return this.authService.checkUser(checkUserDto);
     }

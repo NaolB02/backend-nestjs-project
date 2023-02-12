@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.typeOrmConfig = void 0;
 const user_entity_1 = require("./entities/user/user.entity");
+const boughtProducts_entity_1 = require("./entities/boughtProducts/boughtProducts.entity");
 const product_entity_1 = require("./entities/product/product.entity");
 const userLikes_entity_1 = require("./entities/userLikes/userLikes.entity");
 exports.typeOrmConfig = {
@@ -11,7 +12,7 @@ exports.typeOrmConfig = {
     username: 'root',
     password: '',
     database: 'lorem_shoe',
-    entities: [user_entity_1.User, product_entity_1.Product, userLikes_entity_1.UserLikes],
+    entities: [user_entity_1.User, product_entity_1.Product, userLikes_entity_1.UserLikes, boughtProducts_entity_1.BoughtProducts],
     synchronize: true,
 };
 //# sourceMappingURL=typeorm.config.js.map

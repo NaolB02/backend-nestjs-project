@@ -22,6 +22,7 @@ let AuthController = class AuthController {
         this.authService = authService;
     }
     createUser(createUserDto) {
+        console.log("asdfa");
         return this.authService.createUser(createUserDto);
     }
     checkUser(checkUserDto) {
@@ -29,14 +30,14 @@ let AuthController = class AuthController {
     }
 };
 __decorate([
-    (0, common_1.Post)('/signup'),
+    (0, common_1.Post)('signup'),
     __param(0, (0, common_1.Body)(common_1.ValidationPipe)),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [createUser_dto_1.CreateUserDto]),
     __metadata("design:returntype", void 0)
 ], AuthController.prototype, "createUser", null);
 __decorate([
-    (0, common_1.Post)('/login'),
+    (0, common_1.Post)('login'),
     __param(0, (0, common_1.Body)(common_1.ValidationPipe)),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [checkUser_dto_1.CheckUserDto]),

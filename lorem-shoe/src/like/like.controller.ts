@@ -14,8 +14,8 @@ export class LikeController {
     }
 
     @Post()
-    async createNewLike(@ExtractUser() user: User, @Body() productid: number){
-        await this.likeService.createNewLike(user, productid);
+    async createNewLike(@ExtractUser() user: User, @Body() body){
+        await this.likeService.createNewLike(user, body.productid);
     }
 
     @Delete()

@@ -49,10 +49,12 @@ let LikeService = class LikeService {
     }
     async createNewLike(user, productid) {
         const userid = user.id;
-        let userLike;
-        userLike.productid = productid;
-        userLike.userid = userid;
-        this.userLikesRepo.create(userLike);
+        let userlike = {
+            id: undefined,
+            userid,
+            productid
+        };
+        await this.userLikesRepo.save(userlike);
     }
     async deleteLike(user, productid) {
         const userid = user.id;
@@ -63,6 +65,7 @@ let LikeService = class LikeService {
             }
         };
         const userLike = await this.userLikesRepo.findOne(findOneOptions);
+        console.log(userLike);
         await this.userLikesRepo.delete(userLike.id);
     }
 };

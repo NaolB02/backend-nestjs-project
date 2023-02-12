@@ -8,6 +8,7 @@ import { FindManyOptions, FindOneOptions, Repository } from 'typeorm';
 @Injectable()
 export class LikeService {
     constructor(
+
         @InjectRepository(UserLikes)
         private userLikesRepo: Repository<UserLikes>,
 
@@ -51,13 +52,16 @@ export class LikeService {
 
     async createNewLike(user: User, productid: number){
         const userid = user.id;
+
         
-        let userLike: UserLikes;
+        let userlike: UserLikes = {
+          id: undefined,
+          userid,
+          productid
+        }
 
-        userLike.productid = productid;
-        userLike.userid = userid;
 
-        this.userLikesRepo.create(userLike);
+        await this.userLikesRepo.save(userlike);
         
     }
 
@@ -72,6 +76,7 @@ export class LikeService {
         }
 
         const userLike = await this.userLikesRepo.findOne(findOneOptions);
+        console.log(userLike)
         await this.userLikesRepo.delete(userLike.id);
         
     }

@@ -15,12 +15,6 @@ class CreateUserDto {
 }
 __decorate([
     (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsEmail)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", String)
-], CreateUserDto.prototype, "email", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
     (0, class_validator_1.MinLength)(4),
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
@@ -31,5 +25,11 @@ __decorate([
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], CreateUserDto.prototype, "password", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], CreateUserDto.prototype, "email", void 0);
 exports.CreateUserDto = CreateUserDto;
-//# sourceMappingURL=createUser.Dto.js.map
+//# sourceMappingURL=createUser.dto.js.map

@@ -4,4 +4,6 @@ export declare class User {
     password: string;
     email: string;
     photo: string;
+    salt: string;
+    findPassword(password: string): Promise<boolean>;
 }
